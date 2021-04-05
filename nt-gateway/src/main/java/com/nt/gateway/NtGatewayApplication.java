@@ -34,11 +34,11 @@ public class NtGatewayApplication {
 			keyStore = KeyStore.getInstance("jks");
 			ClassPathResource classPathResource = new ClassPathResource("nt-gateway.jks");
 			InputStream inputStream = classPathResource.getInputStream();
-			keyStore.load(inputStream, "nt-gateway".toCharArray());
+			keyStore.load(inputStream, "jaypatel".toCharArray());
 
 			SSLConnectionSocketFactory socketFactory = new SSLConnectionSocketFactory(new SSLContextBuilder()
 					.loadTrustMaterial(null, new TrustSelfSignedStrategy())
-					.loadKeyMaterial(keyStore, "nt-gateway".toCharArray()).build(),
+					.loadKeyMaterial(keyStore, "jaypatel".toCharArray()).build(),
 					NoopHostnameVerifier.INSTANCE);
 
 			HttpClient httpClient = HttpClients.custom().setSSLSocketFactory(socketFactory)

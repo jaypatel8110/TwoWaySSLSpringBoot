@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class NtMsController {
 	@RequestMapping(value = "/data", method = RequestMethod.GET)
 	public String getData() {
-		System.out.println("Returning data from nt-ms data method");
-		return "Hello from NT-MS-data method";
+		System.out.println("SOme called nt-ms (Server) ");
+		return "Hello from NT-MS-data method (Server)";
 	}
 }

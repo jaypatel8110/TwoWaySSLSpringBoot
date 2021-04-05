@@ -20,8 +20,8 @@ public class NtGatewayController {
 	
 	@RequestMapping(value = "/data", method = RequestMethod.GET)
 	public String getData() {
-		System.out.println("Returning data from nt-gateway own data method");
-		return "Hello from NT-GATEWAY-data method";
+		System.out.println("Returning data from nt-gateway(Client)  own data method");
+		return "Hello from NT-GATEWAY-data method (Client)";
 	}
 	
 	@RequestMapping(value = "/ms-data", method = RequestMethod.GET)
