@@ -15,3 +15,15 @@ server:
     trust-store: classpath:nt-ms.jks
     trust-store-password: jaypatel
     trust-store-type: JKS
+
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    info:
+      enabled: true
+

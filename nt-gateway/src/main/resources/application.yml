@@ -18,3 +18,13 @@ server:
 ---
 endpoint:
   ms-service: https://localhost:9002/nt-ms/data
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    info:
+      enabled: true
